@@ -1,193 +1,22 @@
-.curved-box 
+.navigate
 {
-  width: 300px;
-  height: 200px;
-  margin: 50px auto;
-  border-radius: 50px;
   position: relative;
-  overflow: hidden;
-}
-.curved-box .title {
-  position: absolute;
-  top: 50%;
-  left: 100%;
-  transform: translate(-50%, -50%);
-  margin: 0;
-  color: #000;
-  font-size: 100px;
-  z-index: 2;
-}
-.curved-box button{
-  font-size: 25px;
-  position:absolute; top:50%;
-  background:none;
-  border:none;
-  font-weight: bold;
-}
-.curved-box h1 {
-  position: absolute;
-  top: 50%;
-  left: 18%;
-  transform: translate(-50%, -50%);
-  margin: 0;
-  color: #5ea53a;
-  font-size: 50px;
-  z-index: 3;
-  font-family: microsoft sans serif;
-}
-:root {
-  --curved-alpha: 0.4;
-}
-.curved-box img{
-  position:absolute;
-  
-  width:100px;
-  left: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
-  object-fit: cover;
-}
-.curved-box .learn-btn {
-  position: absolute;
-  top: 85%;
-  left: 13%;
   transform: translate(-50%, -50%);
   z-index: 4; 
   padding: 12px 22px;
   font-size: 18px;
   border: none;
+  outline: none;
   border-radius: 12px;
   background: linear-gradient(to bottom right, #00d0ff, #002138);
   color: #ffffff;
-  cursor: pointer;
 }
-.curved-box .learn-btn:hover { filter: brightness(1.20); }
-.curved-box a {
+.navigate:hover { filter: brightness(1.20); }
+.navigate:visited{
   color: inherit; 
-  text-decoration: none;
-  font-family: bahnschrift;
-}
-.curved-box a:visited {
-  color: inherit;  
+  font-style: normal; 
 }
 
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  padding-bottom: 0;
-}
-
-
-.site-content {
-  flex: 1 0 auto;
-  width: 100%;
-  box-sizing: border-box;
-}
-.site-footer {
-  position: relative;
-  width: 100%;
-  margin-top: auto;  
-  background: rgba(0,0,0,0.95);
-  color: #fff;
-  height: 180px;
-  padding: 40px 0;     
-  overflow: visible;
-  z-index: 50;
-  box-sizing: border-box;
-}
-
-
-.site-footer .footer-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-  max-width: 1310px;
-  margin: 0 auto;
-  padding: 0 5px;
-  height: 100%;
-  box-sizing: border-box;
-  font-family: bahnschrift;
-  font-size: 25px;
-  transform: none;
-}
-
-.site-footer .footer-earth {
-  position: absolute;
-  right: 10%;
-  top: 0;
-  transform: translateY(-50%);
-  height: 320px;   
-  width: auto;
-  z-index: 100;
-  pointer-events: none;
-  filter: drop-shadow(0 12px 18px rgba(0,0,0,0.45));
-}
-.site-footer .footer-right {
-  font-size: 18px;
-  position: absolute;
-  left: 50%;
-  bottom: 12px;              
-  transform: translateX(-50%);
-  text-align: center;
-  z-index: 110;
-  color: #ffffff;
-  font-family: bahnschrift;
-}
-#eco-tips {
-  padding: 50px 0;
-  
-  text-align: center;
-}
-
-.tips-container {
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  gap: 30px;
-  max-width: 1200px;
-  margin: auto;
-  flex-wrap: nowrap; 
-}
-
-.tip-box {
-  flex: 1;
-  background-color: rgba(107, 191, 89, 0.3);
-  border-radius: 20px;
-  padding: 25px;
-  min-width: 300px;
-  max-width: 350px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.tip-box:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.tip-box h2 {
-  font-family: 'Georgia', serif;
-  font-size: 1.6em;
-  color: #143d14;
-  margin-bottom: 15px;
-}
-
-.tip-box ul {
-  list-style-type: disc;
-  text-align: left;
-  padding-left: 20px;
-  color: #000;
-  line-height: 1.6;
-}
 
 @media (max-width: 900px) {
   .tips-container {
@@ -321,6 +150,198 @@ body {
   }
 
 }
+
+.site-content {
+  flex: 1 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+.site-footer {
+  position: relative;
+  width: 100%;
+  margin-top: auto;  
+  background: rgba(0,0,0,0.95);
+  color: #fff;
+  height: 180px;
+  padding: 40px 0;     
+  overflow: visible;
+  z-index: 50;
+  box-sizing: border-box;
+}
+
+
+.site-footer .footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1310px;
+  margin: 0 auto;
+  padding: 0 5px;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: bahnschrift;
+  font-size: 25px;
+  transform: none;
+}
+
+.site-footer .footer-earth {
+  position: absolute;
+  right: 10%;
+  top: 0;
+  transform: translateY(-50%);
+  height: 320px;   
+  width: auto;
+  z-index: 100;
+  pointer-events: none;
+  filter: drop-shadow(0 12px 18px rgba(0,0,0,0.45));
+}
+.site-footer .footer-right {
+  font-size: 18px;
+  position: absolute;
+  left: 50%;
+  bottom: 12px;              
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 110;
+  color: #ffffff;
+  font-family: bahnschrift;
+}
+#eco-tips {
+  padding: 50px 0;
+  
+  text-align: center;
+}
+
+.tips-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: nowrap; 
+}
+
+.tip-box {
+  flex: 1;
+  background-color: rgba(107, 191, 89, 0.3);
+  border-radius: 20px;
+  padding: 25px;
+  min-width: 300px;
+  max-width: 350px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tip-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.tip-box h2 {
+  font-family: 'Georgia', serif;
+  font-size: 1.6em;
+  color: #143d14;
+  margin-bottom: 15px;
+}
+
+.tip-box ul {
+  list-style-type: disc;
+  text-align: left;
+  padding-left: 20px;
+  color: #000;
+  line-height: 1.6;
+}
+
+.curved-box 
+{
+  width: 300px;
+  height: 200px;
+  margin: 50px auto;
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+}
+.curved-box .title {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: #000;
+  font-size: 100px;
+  z-index: 2;
+}
+.curved-box button{
+  font-size: 25px;
+  position:absolute; top:50%;
+  background:none;
+  border:none;
+  font-weight: bold;
+}
+.curved-box h1 {
+  position: absolute;
+  top: 50%;
+  left: 18%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: #5ea53a;
+  font-size: 50px;
+  z-index: 3;
+  font-family: microsoft sans serif;
+}
+:root {
+  --curved-alpha: 0.4;
+}
+.curved-box img{
+  position:absolute;
+  
+  width:100px;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  object-fit: cover;
+}
+.curved-box .learn-btn {
+  position: absolute;
+  top: 85%;
+  left: 13%;
+  transform: translate(-50%, -50%);
+  z-index: 4; 
+  padding: 12px 22px;
+  font-size: 18px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(to bottom right, #00d0ff, #002138);
+  color: #ffffff;
+  cursor: pointer;
+}
+.curved-box .learn-btn:hover { filter: brightness(1.20); }
+.curved-box a {
+  color: inherit; 
+  text-decoration: none;
+  font-family: bahnschrift;
+}
+.curved-box a:visited {
+  color: inherit;  
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-bottom: 0;
+}
+
+
 
 #green-industries {
   font-family: "STXinwei";
@@ -543,9 +564,6 @@ body {
   transform: scale(1.05);
 }
 
-/* ===================== RESPONSIVE DESIGN ===================== */
-
-/* Large Tablets & Small Laptops */
 @media (max-width: 1200px) {
   .tips-container {
     flex-wrap: wrap;
@@ -567,12 +585,34 @@ body {
   }
 }
 
-/* Tablets & Medium Screens */
 @media (max-width: 900px) {
   .tips-container {
     flex-wrap: wrap;
     justify-content: center;
   }
+@media (max-width: 400px) {
+  .curved-box h1 {
+    font-size: 22px;
+  }
+
+  .curved-box img {
+    width: 50px;
+  }
+
+  .curved-box .learn-btn {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+
+  .tip-box {
+    padding: 18px;
+  }
+
+  .eco-about-box p,
+  .eco-about-box ul {
+    font-size: 16px;
+  }
+}
 
   .startup-grid {
     display: grid;
@@ -634,7 +674,6 @@ body {
   }
 }
 
-/* Phones & Small Tablets */
 @media (max-width: 640px) {
   .startup-grid {
     display: grid;
@@ -741,46 +780,5 @@ body {
   }
 }
 
-/* Very Small Phones */
-@media (max-width: 400px) {
-  .curved-box h1 {
-    font-size: 22px;
-  }
 
-  .curved-box img {
-    width: 50px;
-  }
 
-  .curved-box .learn-btn {
-    font-size: 14px;
-    padding: 8px 14px;
-  }
-
-  .tip-box {
-    padding: 18px;
-  }
-
-  .eco-about-box p,
-  .eco-about-box ul {
-    font-size: 16px;
-  }
-}
-
-.navigate
-{
-  position: relative;
-  transform: translate(-50%, -50%);
-  z-index: 4; 
-  padding: 12px 22px;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  border-radius: 12px;
-  background: linear-gradient(to bottom right, #00d0ff, #002138);
-  color: #ffffff;
-}
-.navigate:hover { filter: brightness(1.20); }
-.navigate:visited{
-  color: inherit; 
-  font-style: normal; 
-}
