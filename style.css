@@ -765,3 +765,22 @@ body {
     font-size: 16px;
   }
 }
+
+.navigate
+{
+  position: relative;
+  transform: translate(-50%, -50%);
+  z-index: 4; 
+  padding: 12px 22px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  background: linear-gradient(to bottom right, #00d0ff, #002138);
+  color: #ffffff;
+}
+.navigate:hover { filter: brightness(1.20); }
+.navigate:visited{
+  color: inherit; 
+  font-style: normal; 
+}
